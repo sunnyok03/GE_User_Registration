@@ -20,4 +20,13 @@ public class UserRegistration {
 
         return matcher.matches();
     }
+
+        /*
+    @desc: validate name as first name starts with Cap and has minimum 3 characters
+    @params: firstName as String
+    @return: true if valid else false
+     */
+    public boolean validateLastName(String lastName){
+        return validateFirstName(lastName);
+    }
 }
