@@ -45,4 +45,17 @@ public class UserRegistration {
 
         return matcher.matches();
     }
+
+    /*
+    @desc: validate phone number
+    @params: phone number as String
+    @return: true if valid else false
+    */
+    public boolean validatePhone(String phoneNumber){
+        String phNumberRegex = "^\\d{2} \\d{10}$";
+        Pattern pattern = Pattern.compile(phNumberRegex);
+        Matcher matcher = pattern.matcher(phoneNumber);
+
+        return matcher.matches();
+    }
 }

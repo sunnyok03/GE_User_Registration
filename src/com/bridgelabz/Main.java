@@ -16,5 +16,11 @@ public class Main {
         UserRegistration UC3 = new UserRegistration();
         System.out.println(UC3.validateEmail("abc.xyz@bl.co.in")); // true
         System.out.println(UC3.validateEmail("abz.rahul@bl.co.in")); // false
+
+        //As a User need to enter a valid phone number
+        UserRegistration UC4 = new UserRegistration();
+        System.out.println(UC4.validatePhone("91 0101010101")); // true
+        System.out.println(UC4.validatePhone("910101010011")); // false
+
     }
 }
