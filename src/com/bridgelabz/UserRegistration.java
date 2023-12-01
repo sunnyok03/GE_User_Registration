@@ -59,11 +59,11 @@ public class UserRegistration {
         return matcher.matches();
     }
 
-    /*
- @desc: validate password
- @params: password as String
- @return: true if valid else false
- */
+        /*
+     @desc: validate password
+     @params: password as String
+     @return: true if valid else false
+     */
     public boolean validatePassword(String password){
         String passwordRegex = "^(?=.*[A-Z])(?=.*\\d)(?=.*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?]).{8,}$";
         Pattern pattern = Pattern.compile(passwordRegex);
