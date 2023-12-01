@@ -39,7 +39,7 @@ public class UserRegistration {
     @return: true if valid else false
      */
     public boolean validateEmail(String email){
-        String nameRegex = "[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\\\.[a-zA-Z]{2,}){1,2}$";
+        String nameRegex = "^[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z]{2,}){1,2}$";
         Pattern pattern = Pattern.compile(nameRegex);
         Matcher matcher = pattern.matcher(email);
 
