@@ -58,4 +58,17 @@ public class UserRegistration {
 
         return matcher.matches();
     }
+
+    /*
+ @desc: validate password
+ @params: password as String
+ @return: true if valid else false
+ */
+    public boolean validatePassword(String password){
+        String passwordRegex = "^.{8,}$";
+        Pattern pattern = Pattern.compile(passwordRegex);
+        Matcher matcher = pattern.matcher(password);
+
+        return matcher.matches();
+    }
 }
