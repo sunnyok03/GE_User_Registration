@@ -22,9 +22,9 @@ public class Main {
         System.out.println(UC4.validatePhone("91 0101010101")); // true
         System.out.println(UC4.validatePhone("910101010011")); // false
 
-        //As a User need to enter a valid password of min 8 length
-        UserRegistration UC6 = new UserRegistration();
-        System.out.println(UC6.validatePassword("aBcdefgh")); // true
-        System.out.println(UC6.validatePassword("910A10")); // false
+        //As a User need to enter a valid password of min 8 length,1 capital,1 number
+        UserRegistration UC7 = new UserRegistration();
+        System.out.println(UC7.validatePassword("aBc1efgh")); // true
+        System.out.println(UC7.validatePassword("910A10")); // false
     }
 }
